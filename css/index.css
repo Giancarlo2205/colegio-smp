@@ -1,3 +1,27 @@
+:root {
+  --primary-theme-color-transparente: #1b633fbf;
+  --secondary-theme-color-transparente: #d3e640bf;
+  --text-color: #ffffff;
+  --primary-shadow-color: #35513588;
+  --secondary-shadow-color: #16382280;
+  --shadow-color: #8888;
+  --button-background-color: #3e9c4c;
+  --button-background-color-hover: #6dad5d;
+  --button-text-color: #ffffff;
+  --button-text-color-hover: #ffffff;
+  --primary-highlight: #a1fb61;
+  --secondary-highlight: #e3f747;
+  --link-color:#6edfab;
+  --link-color-hover: #6edfab;
+  --link-color-active: #e3f747;
+  --link-color-visited: #e3f747;
+  --padding-section: 2rem 0;
+  --padding-container: 0 2rem;
+  --max-width-container: 1024px;
+  --border-radius: 0.5rem;
+  --all-transitions: all 0.25s;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -8,8 +32,8 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
   }
   
@@ -37,15 +61,16 @@
   
   .article-container {
     display: flex;
-    padding: 0 1em;
+    padding: 0 1rem;
   }
   
   .article__card {
     display: flex;
     flex-direction: column;
-    background-color: #16181dbf;
+    background-color: var(--primary-theme-color-transparente);
     max-width: 350px;
-    padding: 1em;
+    gap: 1.5rem;
+    padding: 1.5rem;
     border-radius: 0.75rem;
     text-align: center;
     box-sizing: border-box;
@@ -72,6 +97,14 @@
   
   .article__card-description::after {
     content: '🔡';
+  }
+
+  .article__card-link{
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  .article__card-link:active, .article__card-link:visited{
+    color: var(--link-color);
   }
   
   .footer {
@@ -112,4 +145,21 @@
   
   .footer-nav__link-image {
     width: 100%;
+  }
+
+  .button-fixed{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--button-background-color);
+    border-radius: 10rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;   
+  }
+  .button-fixed:hover{
+    background-color: var(--button-background-color-hover);
   }

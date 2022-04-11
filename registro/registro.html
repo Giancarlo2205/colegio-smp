@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>I.E.P. San Martín de Porres - Tacna</title>
+</head>
+
+<body class="body">
+    <main class="main">
+        <section class="section">
+            <div class="section-container">
+                <div class="section__coordinadores">
+                    <h2 class="section__coordinadores-title">Personal Jerárquico</h2>
+                    <table class="section__table">
+                        <thead class="section__table-cabecera">
+                            <tr>
+                                <th class="section__table-titulo">Nº</th>
+                                <th class="section__table-titulo">Cargo</th>
+                                <th class="section__table-titulo">Responsable</th>
+                            </tr>
+                        </thead>
+                        <tbody class="section__table-cuerpo">
+                            <tr>
+                                <td class="section__table-registro">1</td>
+                                <td class="section__table-registro">Coordinador de Letras</td>
+                                <td class="section__table-registro">REVILLA CÁCERES, Lourdes Cecilia</td>
+                            </tr>
+                            <tr>
+                                <td class="section__table-registro">2</td>
+                                <td class="section__table-registro">Coordinador de Ciencias</td>
+                                <td class="section__table-registro">ALVARADO ROMERO, Daniel Santos</td>
+                            </tr>
+                            <tr>
+                                <td class="section__table-registro">3</td>
+                                <td class="section__table-registro">Coordinador de TOE</td>
+                                <td class="section__table-registro">QUIHUE AROTINCO, Orlando</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-container">
+                <div class="section__contacto">
+                    <h2 class="section__contacto-title">Contacto</h2>
+                    <form action="/" class="section__form">
+                        <div class="section__form-item">
+                            <label class="section__form-label" for="nombre">Nombre</label>
+                            <input class="section__form-input" id="nombre" type="text" placeholder="Nombre" required />
+                        </div>
+                        <div class="section__form-item">
+                            <label class="section__form-label" for="email">Email</label>
+                            <input class="section__form-input" id="email" type="email" placeholder="Email" required />
+                        </div>
+                        <div class="section__form-item">
+                            <label class="section__form-label" for="sexo">Sexo</label>
+                            <select class="section__form-selected" id="sexo" required>
+                                <option value="primaria">Masculino</option>
+                                <option value="primaria">Femenino</option>
+                            </select>
+                        </div>
+                        <div class="section__form-item">
+                            <label class="section__form-label" for="celular">Celular</label>
+                            <input class="section__form-input" type="number" id="celular" placeholder="Celular" name="celular" min="900000000"
+                                max="999999999" required />
+                        </div>
+                        <div class="section__form-item">
+                            <textarea class="section__form-textarea" id="mensaje" placeholder="Mensaje" name="mensaje" cols="40" rows="5"
+                                required></textarea>
+                        </div>
+                        <div class="section__form-item-button">
+                            <button class="section__form-button">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="section__volver">
+            <a class="section__link" href="../index.html">Volver</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-nav-container">
+                <p>Copyright &copy; 2022 - Todos los derechos reservados.</p>
+        </nav>
+    </footer>
+</body>
+
+</html>
