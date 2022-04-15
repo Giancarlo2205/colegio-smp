@@ -1,0 +1,197 @@
+:root {
+    --primary-theme-color: #c2f5e2;
+    --secondary-theme-color: #ade6e0;
+    --text-color: #292927;
+    --primary-shadow-color: rgba(53, 81, 53, 0.533);
+    --secondary-shadow-color: #16382280;
+    --border-table-color: #189c4b;
+    --background-table-header: #f7ff77;
+    --background-table-body: #ffffff;
+    --shadow-color: #8888;
+    --button-background-color: #0dac57;
+    --button-background-color-hover: #43bd7c;
+    --button-text-color: #ffffff;
+    --button-text-color-hover: #ffffff;
+    --link-color: #008020;
+    --link-color-hover: #6edfab;
+    --link-color-active: #e3f747;
+    --link-color-visited: #e3f747;
+    --primary-highlight: #a1fb61;
+    --secondary-highlight: #e3f747;
+    --padding-section: 2rem 0;
+    --padding-container: 0 2rem;
+    --max-width-container: 1024px;
+    --border-radius-container: 0.5rem;
+    --border-radius-input: 0.25rem;
+    --all-transitions: all 0.25s;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;    
+    color: var(--text-color);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 1px);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section {
+    display: flex;
+}
+
+.section-container {
+    display: flex;
+    padding: 0 1em;
+}
+
+.section__coordinadores {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-theme-color);
+    max-width: 600px;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-container);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.section__coordinadores-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.section__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.section__table-titulo, .section__table-registro {
+    border: 1px solid var(--border-table-color);
+    padding: 8px;
+    background-color: var(--background-table-body);
+}
+
+.section__table-titulo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--background-table-header);
+    color: rgb(12, 70, 26);
+}
+
+.section__contacto {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-theme-color);
+    max-width: 700px;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius-container);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.section__contacto-title {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.section__form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.5rem 0;
+}
+
+.section__form-label {
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.section__form-input {
+    width: 100%;
+    border-radius: var(--border-radius-input);
+    border: none;
+    height: 2rem;
+}
+
+.section__form-selected {
+    border: none;
+    height: 2rem;
+    border-radius: var(--border-radius-input);
+}
+
+.section__form-textarea {
+    border: none;
+    border-radius: var(--border-radius-input);
+}
+
+.section__form-item-button {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.section__form-button {
+    width: 7rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-input);
+    border: none;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+}
+
+.section__form-button:hover {
+    background-color: var(--button-background-color-hover);
+    color: var(--button-text-color-hover);
+}
+
+.section__volver {
+    display: flex;
+}
+
+.section__link {
+    text-decoration: none;
+    color: var(--link-color);
+
+}
+
+.section__link:active, .section__linkk:visited {
+    color: var(--link-color);
+}
+
+
+.footer {
+    display: flex;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: var(--secondary-theme-color);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: var(--primary-theme-color);
+    }
+}
