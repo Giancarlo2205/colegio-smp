@@ -24,29 +24,24 @@
   --all-transitions: all 0.25s;
 }
 
-
-.body {
+.body {  
+    margin: 0;    
+    background-image: url(https://i.postimg.cc/s28WLPq1/desfile-bn.jpg);
+    background-size: cover;
+    background-position: center;    
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;    
+  }
+  .background{    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    background-image: url(https://i.postimg.cc/s28WLPq1/desfile-bn.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: var(--text-color);
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-  }
-  .background{    
-    position: absolute;
-    min-height: 100vh;
+    gap: 1.5rem;       
     background: rgb(194,245,226);
     background: linear-gradient(var(--primary-gradient-color),var(--secondary-gradient-color));
     opacity: 0.9;
-    width: 100%;
-    z-index: -1;
+    min-height: 100vh;    
   }
  
   .header {
