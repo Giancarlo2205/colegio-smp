@@ -329,11 +329,12 @@
     body {
         background-color: var(--primary-theme-color);
     }
-}
+
     .header__nav {
         display: none;
     }
 }
+
 @media only screen and (min-width:1206px) {
     .main {
         grid-template-columns: 4fr 1fr;
