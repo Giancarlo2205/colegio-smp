@@ -1,5 +1,5 @@
 :root {
-  --primary-theme-color-transparente: #1b633fbf;
+  --primary-theme-color-transparente: #13844ec4;
   --secondary-theme-color-transparente: #d3e640bf;
   --text-color: #ffffff;
   --primary-shadow-color: #35513588;
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-image: url(https://iesmp.edu.pe/index/wp-content/uploads/2021/10/cropped-desfile1.jpg);
+    background-image: url(https://i.postimg.cc/fT3f49MY/fondo-smp.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
