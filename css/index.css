@@ -74,6 +74,7 @@
     border-radius: 0.75rem;
     text-align: center;
     box-sizing: border-box;
+    text-shadow: 0 0 0.25rem;
   }
   
   .article__card-title {
@@ -102,9 +103,11 @@
   .article__card-link{
     color: var(--link-color);
     text-decoration: none;
+    
   }
   .article__card-link:active, .article__card-link:visited{
     color: var(--link-color);
+    
   }
   
   .footer {
@@ -159,6 +162,8 @@
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;   
+    text-shadow: 0 0 0.25rem;
+
   }
   .button-fixed:hover{
     background-color: var(--button-background-color-hover);
