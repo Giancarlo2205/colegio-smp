@@ -100,6 +100,7 @@
 .main__h1 {
     grid-area: title;
     margin: 0;
+    animation: jump-top, 1s;
 }
 .grid {
     grid-area: contenido;
@@ -168,6 +169,7 @@
     gap: 1rem;
     text-align: center;
     width: 100%;
+    animation: jump 1s linear;
 }
 
 .section__coordinadores-title {
@@ -201,6 +203,7 @@
     border-radius: var(--border-radius-container);
     text-align: left;
     width: 100%;
+    animation: jump-rigth 1s;
 }
 
 .section__contacto-title {
@@ -273,6 +276,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
     min-height: 100px;
+    animation: jump 1s;
 }
 .anuncio {
     margin: 0;
@@ -325,6 +329,7 @@
     body {
         background-color: var(--primary-theme-color);
     }
+
     .header__nav {
         display: none;
     }
@@ -341,5 +346,21 @@
     }
     .sidebar__links {
         grid-template-columns: 1fr;
+    }
+}
+@keyframes jump-rigth{
+    0%{
+        padding-left: 50%;
+    }
+    50%{
+        padding-left: 0%;
+    }
+}
+@keyframes jump{
+    0%{
+        padding-top: 50%;
+    }
+    50%{
+        padding-top: 0%; 
     }
 }
