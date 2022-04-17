@@ -4,6 +4,8 @@
   --text-color: #ffffff;
   --primary-shadow-color: #35513588;
   --secondary-shadow-color: #16382280;
+  --primary-gradient-color: #fffbeb;
+  --secondary-gradient-color: #c2f5e2;
   --shadow-color: #8888;
   --button-background-color: #3e9c4c;
   --button-background-color-hover: #6dad5d;
@@ -22,13 +24,14 @@
   --all-transitions: all 0.25s;
 }
 
+
 .body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-image: url(https://i.postimg.cc/Dyqg2pjn/fondo-smp.jpg);
+    background-image: url(https://i.postimg.cc/s28WLPq1/desfile-bn.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -36,7 +39,16 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
   }
-  
+  .background{    
+    position: absolute;
+    min-height: 100vh;
+    background: rgb(194,245,226);
+    background: linear-gradient(var(--primary-gradient-color),var(--secondary-gradient-color));
+    opacity: 0.9;
+    width: 100%;
+    z-index: -1;
+  }
+ 
   .header {
     display: flex;
   }
@@ -44,11 +56,12 @@
   .header__image-container {
     display: flex;
     max-width: 256px;
-    margin: 0;
+    margin: 0;    
   }
   
   .header__image {
     width: 100%;    
+    animation: scale 2s infinite alternate;
   }
   
   .main {
@@ -167,4 +180,13 @@
   }
   .button-fixed:hover{
     background-color: var(--button-background-color-hover);
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
   }
