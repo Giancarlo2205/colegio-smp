@@ -13,7 +13,7 @@
   --button-text-color-hover: #ffffff;
   --primary-highlight: #a1fb61;
   --secondary-highlight: #e3f747;
-  --link-color:#6edfab;
+  --link-color:#aaef75  ;
   --link-color-hover: #6edfab;
   --link-color-active: #e3f747;
   --link-color-visited: #e3f747;
@@ -82,7 +82,7 @@
     border-radius: 0.75rem;
     text-align: center;
     box-sizing: border-box;
-    text-shadow: 0 0 0.25rem;
+    text-shadow: 0 0 0.25rem #046112;
   }
   
   .article__card-title {
@@ -101,11 +101,11 @@
   }
   
   .article__card-description::before {
-    content: '🔡';
+    content: '📏✅';
   }
   
   .article__card-description::after {
-    content: '🔡';
+    content: '❇️📐';
   }
 
   .article__card-link{
@@ -170,7 +170,7 @@
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;   
-    text-shadow: 0 0 0.25rem;
+    text-shadow: 0 0 0.25rem #046112;
 
   }
   .button-fixed:hover{

@@ -101,7 +101,7 @@
     grid-area: title;
     margin: 0;
     animation: jump-top, 1s;
-    text-shadow: 0 0 0.5rem var(--text-color);
+    text-shadow: 0 0 0.5rem var(--shadow-color);
 
 }
 .grid {
@@ -323,12 +323,6 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 600px) {
-    /* body {
-        background-color: var(--secondary-theme-color);
-    } */
-}
-
 @media only screen and (max-width: 600px) {
     body {
         background-color: var(--primary-theme-color);
@@ -336,6 +330,10 @@
 
     .header__nav {
         display: none;
+    }
+
+    .section {       
+        box-shadow: none;    
     }
 }
 
