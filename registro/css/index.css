@@ -145,6 +145,7 @@
 }
 .sidebar__links-link:hover {
     font-size: 1.15rem;
+    background-color: #c2f5e2;
 }
 
 .section {
